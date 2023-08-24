@@ -64,7 +64,7 @@ kubectl apply -f https://github.com/ogelbric/YAML/raw/master/authorize-psp-for-g
 Download the minio yaml file 
 
 ```
-curl https://raw.githubusercontent.com/minio/docs/master/source/extra/examples/minio-dev.yaml -o
+curl https://raw.githubusercontent.com/minio/docs/master/source/extra/examples/minio-dev.yaml -O
 
 ```
 
