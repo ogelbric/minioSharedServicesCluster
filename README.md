@@ -21,6 +21,14 @@ kubectl apply -f https://raw.githubusercontent.com/ogelbric/minioSharedServicesC
 
 ```
 
+Two things to note in the cluster yaml file are 1) a /data mount point and 2) a volume by the name localvolume
+
+```
+      - capacity:
+            storage: "10Gi"
+          mountPath: "/data"
+          name: localvolume
+```
 
 
 ## Inspration Document
