@@ -23,3 +23,9 @@ kubectl apply -f https://raw.githubusercontent.com/ogelbric/minioSharedServicesC
 
 
 
+## Inspration Document
+
+https://min.io/docs/minio/kubernetes/upstream/index.html?ref=docs-redirect
+
+
+
