@@ -67,6 +67,12 @@ Download the minio yaml file
 curl https://raw.githubusercontent.com/minio/docs/master/source/extra/examples/minio-dev.yaml -O
 ```
 
+The yaml file calls for a certain node label
+
+```
+k label node miniocluster-node-pool-1-pns7t-7fbc7cd957-zdh4b kubernetes.io/hostname=kubealpha.local --overwrite
+
+```
 
 
 
