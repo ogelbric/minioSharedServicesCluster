@@ -81,9 +81,44 @@ node/miniocluster-node-pool-1-9ljtz-694979f49c-cj4vw labeled
 
 ```
 
+Apply the minio.yaml file 
 
+```
+kubectl apply -f minio-dev.yaml
 
+k get pods -n minio-dev
 
+NAME    READY   STATUS    RESTARTS   AGE
+minio   1/1     Running   0          45s
+
+kubectl describe pod/minio -n minio-dev
+
+Events:
+  Type    Reason     Age   From               Message
+  ----    ------     ----  ----               -------
+  Normal  Scheduled  82s   default-scheduler  Successfully assigned minio-dev/minio to miniocluster-node-pool-1-9ljtz-694979f49c-cj4vw
+  Normal  Pulling    81s   kubelet            Pulling image "quay.io/minio/minio:latest"
+  Normal  Pulled     67s   kubelet            Successfully pulled image "quay.io/minio/minio:latest" in 14.134533904s
+  Normal  Created    67s   kubelet            Created container minio
+  Normal  Started    67s   kubelet            Started container minio
+
+kubectl logs pod/minio -n minio-dev
+Formatting 1st pool, 1 set(s), 1 drives per set.
+WARNING: Host local has more than 0 drives of set. A host failure will result in data becoming unavailable.
+WARNING: Detected default credentials 'minioadmin:minioadmin', we recommend that you change these values with 'MINIO_ROOT_USER' and 'MINIO_ROOT_PASSWORD' environment variables
+MinIO Object Storage Server
+Copyright: 2015-2023 MinIO, Inc.
+License: GNU AGPLv3 <https://www.gnu.org/licenses/agpl-3.0.html>
+Version: RELEASE.2023-08-23T10-07-06Z (go1.19.12 linux/amd64)
+
+Status:         1 Online, 0 Offline. 
+S3-API: http://192.167.1.4:9000  http://127.0.0.1:9000     
+Console: http://192.167.1.4:9090 http://127.0.0.1:9090   
+
+Documentation: https://min.io/docs/minio/linux/index.html
+Warning: The standard parity is set to 0. This can lead to data loss.
+
+```
 
 
 ## Inspration Document
