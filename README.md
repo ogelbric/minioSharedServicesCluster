@@ -43,6 +43,16 @@ tmclocalcluster   Provisioned   43d    v1.24.9+vmware.1
 
 ![GitHub](miniocluster.png)
 
+Log onto new cluster
+
+```
+kubectl vsphere login --server 192.168.2.100 --vsphere-username administrator@vsphere.local --tanzu-kubernetes-cluster-namespace  namespace1000 --tanzu-kubernetes-cluster-name miniocluster --insecure-skip-tls-verify
+
+```
+
+
+
+
 
 
 ## Inspration Document
