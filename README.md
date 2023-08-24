@@ -29,6 +29,18 @@ Two things to note in the cluster yaml file are 1) a /data mount point and 2) a 
           mountPath: "/data"
           name: localvolume
 ```
+Checking on our cluster
+
+```
+k get clusters
+NAME              PHASE         AGE    VERSION
+miniocluster      Provisioned   6m9s   v1.23.8+vmware.2
+tmclocalcluster   Provisioned   43d    v1.24.9+vmware.1
+[root@localhost minio]#
+
+```
+
+
 
 
 ## Inspration Document
