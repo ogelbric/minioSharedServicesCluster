@@ -119,6 +119,17 @@ Documentation: https://min.io/docs/minio/linux/index.html
 Warning: The standard parity is set to 0. This can lead to data loss.
 
 ```
+Depoly the ingress services
+
+```
+kubectl apply -f https://raw.githubusercontent.com/ogelbric/minioSharedServicesCluster/main/minio-svc.yaml -n minio-dev
+
+k get svc -n minio-dev
+NAME    TYPE           CLUSTER-IP     EXTERNAL-IP     PORT(S)        AGE
+minio   LoadBalancer   10.96.157.71   192.168.2.108   80:30218/TCP   10s
+
+```
+
 
 
 ## Inspration Document
