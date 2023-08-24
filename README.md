@@ -70,7 +70,14 @@ curl https://raw.githubusercontent.com/minio/docs/master/source/extra/examples/m
 The yaml file calls for a certain node label
 
 ```
-k label node miniocluster-node-pool-1-pns7t-7fbc7cd957-zdh4b kubernetes.io/hostname=kubealpha.local --overwrite
+k get nodes
+NAME                                              STATUS   ROLES                  AGE   VERSION
+miniocluster-5j55r-mvddn                          Ready    control-plane,master   22m   v1.23.8+vmware.2
+miniocluster-node-pool-1-9ljtz-694979f49c-cj4vw   Ready    <none>                 18m   v1.23.8+vmware.2
+
+k label node miniocluster-node-pool-1-9ljtz-694979f49c-cj4vw kubernetes.io/hostname=kubealpha.local --overwrite
+
+node/miniocluster-node-pool-1-9ljtz-694979f49c-cj4vw labeled
 
 ```
 
