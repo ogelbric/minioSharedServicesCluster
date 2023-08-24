@@ -29,6 +29,7 @@ Two things to note in the cluster yaml file are 1) a /data mount point and 2) a 
           mountPath: "/data"
           name: localvolume
 ```
+
 Checking on our cluster
 
 ```
