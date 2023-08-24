@@ -16,5 +16,6 @@ Create the cluster
 
 ```
 kubectl apply -f https://github.com/ogelbric/minioSharedServicesCluster/raw/master/miniocluster.yaml
+
 ```
 
