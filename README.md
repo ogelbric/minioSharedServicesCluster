@@ -130,6 +130,8 @@ minio   LoadBalancer   10.96.157.71   192.168.2.108   80:30218/TCP   10s
 
 ```
 
+![GitHub](minioadmin.png)
+
 
 
 ## Inspration Document
