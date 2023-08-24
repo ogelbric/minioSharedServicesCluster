@@ -1,6 +1,6 @@
 # MinIO Shared Services Deployment 
 
-Make sure you are supervisor Namespace where the shared service cluster is going to be created (In my case namespace1000
+Make sure you are supervisor Namespace where the shared service cluster is going to be created (in my case namespace1000)
 
 ```
 k config use-context namespace1000
