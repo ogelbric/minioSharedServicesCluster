@@ -12,3 +12,9 @@ NAME                               STATUS   ROLES                  AGE   VERSION
 42234f3fd4ee6ad71dde6b4da15622e5   Ready    control-plane,master   76d   v1.24.9+vmware.wcp.1
 422398077f99efb5bf4475df395f65f3   Ready    control-plane,master   76d   v1.24.9+vmware.wcp.
 
+Create the cluster
+
+```
+kubectl apply -f https://github.com/ogelbric/minioSharedServicesCluster/raw/master/miniocluster.yaml
+```
+
