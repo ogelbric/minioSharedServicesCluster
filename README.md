@@ -48,6 +48,11 @@ Log onto new cluster
 ```
 kubectl vsphere login --server 192.168.2.100 --vsphere-username administrator@vsphere.local --tanzu-kubernetes-cluster-namespace  namespace1000 --tanzu-kubernetes-cluster-name miniocluster --insecure-skip-tls-verify
 
+k get nodes
+NAME                                              STATUS   ROLES                  AGE   VERSION
+miniocluster-5j55r-mvddn                          Ready    control-plane,master   14m   v1.23.8+vmware.2
+miniocluster-node-pool-1-9ljtz-694979f49c-cj4vw   Ready    <none>                 10m   v1.23.8+vmware.2
+
 ```
 
 
