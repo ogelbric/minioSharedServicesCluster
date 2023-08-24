@@ -54,6 +54,20 @@ miniocluster-5j55r-mvddn                          Ready    control-plane,master 
 miniocluster-node-pool-1-9ljtz-694979f49c-cj4vw   Ready    <none>                 10m   v1.23.8+vmware.2
 
 ```
+Make cluster usable
+
+```
+kubectl apply -f https://github.com/ogelbric/YAML/raw/master/authorize-psp-for-gc-service-accounts.yaml
+
+```
+
+Download the minio yaml file 
+
+```
+curl https://raw.githubusercontent.com/minio/docs/master/source/extra/examples/minio-dev.yaml -o
+
+```
+
 
 
 
